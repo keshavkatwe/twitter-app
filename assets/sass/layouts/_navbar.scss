@@ -1,0 +1,139 @@
+$navBar-height: 80px;
+
+header
+{
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+    height: $navBar-height;
+    padding-right:15px;
+
+    > div
+    {
+        width: 49%;
+    }
+
+    .logo-notifications
+    {
+        @include respond-to(xs)
+        {
+            display: none;
+        }
+        .logo
+        {
+            float: left;
+            display: inline-block;
+            padding: 15px;
+            border-right: 1px solid #f2eee8;
+            img
+            {
+                width: 50px;
+            }
+        }
+
+        .notifications
+        {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li
+            {
+                text-align: center;
+                height: $navBar-height;
+                width: 60px;
+                float: left;
+
+                a
+                {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    border: 1px solid #d0d0d0;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 40px;
+                    color: #5f5f5f;
+                    margin-top: 20px;
+                }
+
+                &:hover, &:active, &:focus
+                {
+                    border-bottom: 1px solid $blue;
+                }
+            }
+        }
+    }
+
+    .twitter-logo
+    {
+        color: $blue;
+        font-size: 34px;
+        margin-top: 15px;
+        text-align: center;
+        
+        @include respond-to(xs)
+        {
+            width: 100%;
+        }
+    }
+
+    .search
+    {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: flex-end;
+        
+        @include respond-to(xs)
+        {
+            display: none;
+        }
+
+        .search-group
+        {
+            display: inline-block;
+            position: relative;
+            margin-right: 15px;
+
+            input
+            {
+                height: 40px;
+                border-radius: 22px;
+                box-shadow: none;
+                text-indent: 10px;
+                border:1px solid #DDD;
+                margin-top: 15px;
+                width: 220px; 
+                margin: 0;
+                font-size: 16px;
+
+            }
+
+            .icon
+            {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                color: #DDD;
+            }
+        }
+
+        .profile-dropdown
+        {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            overflow: hidden;
+            display: inline-block;
+            img
+            {
+                width: 50px;
+            }
+        }
+    }
+}
+
+

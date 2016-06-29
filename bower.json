@@ -1,0 +1,14 @@
+{
+    "name": "twitter",
+    "version": "1.0.0",
+    "main": "",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+        "basscss": "^8.0.1",
+        "font-awesome": "fontawesome#^4.6.3"
+    },
+    "devDependencies": {}
+}

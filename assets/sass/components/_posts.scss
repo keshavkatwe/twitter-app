@@ -1,0 +1,134 @@
+.posts
+{
+    article
+    {
+        display: flex;
+        flex-direction: row;
+        padding: 30px 25px;
+        border-bottom: 1px solid #eaeaea;
+
+        figure
+        {
+            margin: 0;
+            margin-right:30px;
+
+            @include respond-to(xs)
+            {
+                display: none;
+            }
+
+            img
+            {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+
+        .caption
+        {
+            .article-head
+            {
+                display: flex;
+                align-items: baseline;
+                flex-direction: row;
+
+                h4
+                {
+                    margin: 0;
+
+                    a
+                    {
+                        margin-right: 10px;
+                        color: greenyellow;
+                    }
+                }
+
+                p
+                {
+                    margin: 0;
+                    margin-left: 6px;
+                    font-size: 14px;
+                    color: #afafaf;
+                }
+
+
+
+                .time-ago
+                {
+                    flex: 2;
+                    text-align: right;
+                    color: #afafaf;
+                }
+            }
+
+            .text-content
+            {
+                color: #4a4a4a;
+            }
+
+            .video
+            {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                position: relative;
+                img
+                {
+                    width: 100%;
+                }
+
+                a
+                {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    text-decoration: none;
+                    text-align: center;
+                    top: 0;
+                    display: flex;
+                    justify-content: center;
+
+                    .fa
+                    {
+                        height: 60px;
+                        width: 60px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        border-radius: 50px;
+                        color: $white;
+                        line-height: 60px;
+                        align-self: center;
+                    }
+
+                    &:hover, &:focus, &:active
+                        {
+                        .fa
+                        {
+                            background-color: rgba(0, 0, 0, 0.7);
+                        }
+                    }
+                }
+            }
+
+            .article-foot
+            {
+                display: flex;
+                flex-direction: row;
+
+                a
+                {
+                    text-decoration: none;
+                    margin-right: 20px;
+                    color: #afafaf;
+
+                    &.expand
+                    {
+                        flex: 2;
+                        text-align: right;
+                        font-size: 18px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

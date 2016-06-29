@@ -1,0 +1,47 @@
+.top-header
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+
+    li
+    {
+        width:50%;
+
+        a
+        {
+            padding: 0 1px;
+            text-align: center;
+            text-decoration: none;
+
+
+            p
+            {
+                margin: 0;
+                text-transform: uppercase;
+                color: #bbb;
+
+                @include respond-to(xs)
+                {
+                    font-size: 12px;
+                }
+            }
+
+            span
+            {
+                display: block;
+                color: $black;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        &.active
+        {
+            border-bottom: 4px solid $blue;
+        }
+
+    }
+}

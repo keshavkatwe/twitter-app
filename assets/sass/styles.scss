@@ -1,0 +1,19 @@
+//Fonts Open San
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+@import "base/_colors.scss";
+@import "base/_global.scss";
+
+//Utils
+@import "utils/_snippets.scss";
+@import "utils/_animations.scss";
+
+//Layouts
+@import "layouts/_navbar.scss";
+@import "layouts/_footer.scss";
+
+
+//Components
+@import "components/_content.scss";
+@import "components/_pageheader.scss";
+@import "components/_posts.scss";
